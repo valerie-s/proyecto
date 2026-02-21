@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dispensador de medicinas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1> Dispensador de Medicinas</h1>
+    <nav>
+        <a href="index.html" >Inicio</a>
+        <a href="diseno.html"class="active">Diseño Preliminar</a>
+    </nav>
+</header>
+
+
+<section class="card">
+    <h2>Diseño Preliminar</h2>
+<div class="accordion">
+
+    <!-- CONTEXTO DEL PROBLEMA -->
+    <button class="accordion-btn">
+        Contexto del problema
+        <span class="icon">▾</span>
+    </button>
+    <div class="accordion-content">
+
+        <!-- BÚSQUEDA -->
+          <button class="accordion-btn sub-btn">
+    ¿Qué se sabe del tema?
+    <span class="icon">▾</span>
+</button>
+
+<div class="accordion-content informal-scroll">
+
+    <div class="source-card">
+        <h4>1. Crisis de Desabasto y Carencias</h4>
+        <p><strong>Causas:</strong> Fallas en la cadena de suministro, cambios en políticas de compra consolidada, investigaciones por prácticas desleales y deficiencias logísticas.</p>
+        <p><strong>Impacto Social:</strong> Organizaciones como Cáritas y Coparmex reportan afectaciones a sectores vulnerables. En hospitales de la SSA se han registrado protestas por falta de insumos básicos y medicamentos oncológicos.</p>
+        <p><strong>Pérdidas Económicas:</strong> Reportes de medicamentos caducados en almacenes (ej. Sinaloa) reflejan ineficiencia administrativa.</p>
+    </div>
+
+    <div class="source-card">
+        <h4>2. Gestión y Logística Gubernamental</h4>
+        <p><strong>Estrategias:</strong> Adelanto de compras e investigaciones por monopolios y prácticas desleales.</p>
+        <p><strong>Transparencia:</strong> Implementación de portales de seguimiento por parte de la Secretaría de Salud, aunque persiste percepción pública de carencia.</p>
+    </div>
+
+    <div class="source-card">
+        <h4>3. Innovación y Soluciones Tecnológicas</h4>
+        <p><strong>Dispensación Automatizada:</strong> Reduce errores humanos, optimiza inventarios y mejora la seguridad del paciente.</p>
+        <p><strong>Trazabilidad:</strong> Permite seguimiento del medicamento desde almacén hasta el paciente.</p>
+    </div>
+
+    <div class="source-card">
+        <h4>4. Adherencia Terapéutica y Cronoterapia</h4>
+        <p><strong>Adherencia:</strong> El incumplimiento terapéutico incrementa costos hospitalarios y riesgos de salud.</p>
+        <p><strong>Cronoterapia:</strong> La UNAM destaca la importancia de la hora de administración para maximizar la efectividad del tratamiento.</p>
+    </div>
+
+    <div class="source-card">
+        <h4>5. Medicamentos Caducos</h4>
+        <p><strong>Riesgos:</strong> Contaminación ambiental y mercado negro si no se desechan adecuadamente.</p>
+        <p><strong>Recolección:</strong> En CDMX existen contenedores especiales gestionados por instituciones como el IPN y la Secretaría de Salud.</p>
+    </div>
+
+</div>
+
+        <!-- FUENTES -->
+        <button class="accordion-btn sub-btn">
+            Fuentes de información
+            <span class="icon">▾</span>
+        </button>
+        <div class="accordion-content sub-content scrollable">
+
+            <button class="accordion-btn sub-btn">
+    Papers
+    <span class="icon">▾</span>
+</button>
+
+<div class="accordion-content sub-content books-scroll">
+
+<div class="book-card">
+    <h4>Sistema basado en IoT y Servomotores</h4>
+    <p class="editors">
+        <strong>Enfoque:</strong> Conectividad IoT de bajo costo
+    </p>
+    <p>
+        Este artículo describe un dispensador moderno enfocado en la conectividad a internet de bajo costo.
+    </p>
+    <p><strong>El cerebro:</strong> NodeMCU (ESP8266) con conexión WiFi integrada.</p>
+    <p><strong>Mecanismo:</strong> Servomotores SG90 controlados mediante PWM.</p>
+    <p><strong>Interfaz:</strong> LCD 16x2 + buzzer para alarma sonora.</p>
+</div>
+
+<div class="book-card">
+    <h4>Sistema de Asistencia Visual/Auditiva</h4>
+    <p class="editors">
+        <strong>Enfoque:</strong> Asistencia sensorial
+    </p>
+    <p>
+        Diseñado para personas ciegas o adultos mayores que requieren guías sensoriales.
+    </p>
+    <p><strong>El cerebro:</strong> Arduino Nano + HC-05 + RTC DS3231.</p>
+    <p><strong>Mecanismo:</strong> LEDs y alarmas piezoeléctricas.</p>
+    <p><strong>Interfaz:</strong> App Android vía Bluetooth.</p>
+</div>
+
+<div class="book-card">
+    <h4>Sistema basado en Raspberry Pi y Motor a Pasos</h4>
+    <p class="editors">
+        <strong>Enfoque:</strong> Procesamiento avanzado
+    </p>
+    <p>
+        Diseño robusto ideal para lógica compleja o bases de datos locales.
+    </p>
+    <p><strong>El cerebro:</strong> Raspberry Pi 3 programada en Python.</p>
+    <p><strong>Mecanismo:</strong> Motor 28BYJ-48 + driver ULN2003.</p>
+    <p><strong>Innovación:</strong> Sensor IR que valida la entrega y envía alerta por correo.</p>
+</div>
+
+</div>
+ 
+
+            <button class="accordion-btn sub-btn">
+    Patentes
+    <span class="icon">▾</span>
+</button>
+
+<div class="accordion-content sub-content books-scroll">
+
+    <div class="book-card">
+        <h4>US 2024/0082108 A1: Smart Pill Dispenser</h4>
+        <p class="editors">
+            <strong>Enfoque:</strong> Seguridad y Prevención de Abuso (Opioides)
+        </p>
+        <p>
+            Diseñado para evitar sobredosificación o robo del medicamento.
+        </p>
+        <p><strong>Mecanismo:</strong> Cartucho bloqueado con autenticación y detección de manipulación física.</p>
+        <p><strong>Diferenciador:</strong> Validación de identidad (biometría o códigos) y seguridad física avanzada.</p>
+        <p><strong>Estatus:</strong> Solicitud de Patente (A1) – Publicada en 2024.</p>
+    </div>
+
+    <div class="book-card">
+        <h4>US 11,602,488 B2: Automated Pill Dispenser</h4>
+        <p class="editors">
+            <strong>Enfoque:</strong> Robustez Mecánica y Fiabilidad
+        </p>
+        <p>
+            Automatiza la dosificación reduciendo errores mecánicos.
+        </p>
+        <p><strong>Mecanismo:</strong> Sistema de carrusel giratorio con motor y canal de caída.</p>
+        <p><strong>Electrónica clave:</strong> Sensores que validan que la pastilla cayó correctamente.</p>
+        <p><strong>Estatus:</strong> Patente Concedida (B2) – Activa desde 2023.</p>
+    </div>
+
+    <div class="book-card">
+        <h4>CN 111658517 A: Smart Medicine Box</h4>
+        <p class="editors">
+            <strong>Enfoque:</strong> IoT e Integración con App
+        </p>
+        <p>
+            Sistema de monitoreo remoto para adultos mayores.
+        </p>
+        <p><strong>Funcionamiento:</strong> Conexión a la nube que envía alertas al cuidador.</p>
+        <p><strong>Hardware:</strong> STM32, módulo WiFi, módulo de voz y LEDs indicadores.</p>
+        <p><strong>Estatus:</strong> Solicitud de Patente China (A) – Publicada en 2020.</p>
+    </div>
+
+</div>
+
+            <button class="accordion-btn sub-btn">
+                Libros
+                <span class="icon">▾</span>
+            </button>
+            <div class="accordion-content sub-content books-scroll">
+
+    <div class="book-card">
+        <h4>Internet of Medical Things: Remote Healthcare Systems and Applications</h4>
+        <p class="editors">
+            <strong>Editores:</strong> D. Jude Hemanth, J. Anitha, George A. Tsihrintzis
+        </p>
+        <p>
+            Este libro cubre las bases del Internet of Medical Things (IoMT), tecnologías, 
+	    sensores y aplicaciones en sistemas de salud, incluyendo monitoreo remoto de 
+	     pacientes y redes de dispositivos inteligentes conectados.
+        </p>
+    </div>
+
+    <div class="book-card">
+        <h4>IoT in Healthcare Systems: Applications, Benefits, Challenges, and Case Studies</h4>
+        <p class="editors">
+            <strong>Editores:</strong> Piyush Kumar Shukla, Aditya Patel,
+            Prashant Kumar Shukla y otros
+        </p>
+        <p>
+            Ofrece una visión general de las tecnologías IoT en el sector salud, 
+           con casos de uso prácticos, beneficios y desafíos. Incluye análisis 
+           de cómo IoT mejora el cuidado de pacientes mediante sistemas conectados.
+        </p>
+    </div>
+
+</div>
+
+
+            <button class="accordion-btn sub-btn">
+    Datos estadísticos
+    <span class="icon">▾</span>
+</button>
+
+<div class="accordion-content sub-content books-scroll">
+
+    <div class="book-card">
+        <h4>1. Baja adherencia terapéutica (OMS)</h4>
+        <p class="editors">
+            <strong>Magnitud global:</strong> Problema mundial de gran magnitud
+        </p>
+        <p>
+            La OMS señala que la falta de adherencia es la principal causa de que los medicamentos no generen todos sus beneficios.
+        </p>
+        <p>
+            En países desarrollados, la adherencia en enfermedades crónicas es apenas superior al 50%.
+            Entre el 50–60% de los pacientes no siguen adecuadamente su tratamiento.
+        </p>
+    </div>
+
+    <div class="book-card">
+        <h4>2. Tasas de adherencia por enfermedad</h4>
+        <p class="editors">
+            <strong>Datos clave:</strong> Rangos amplios e inconsistentes
+        </p>
+        <p>
+            Diabetes: 36–87% <br>
+            Hipertensión: 33–84% <br>
+            Cáncer (oral): 20–100% <br>
+            VIH/SIDA: 70–80%
+        </p>
+        <p>
+            Estos rangos demuestran la inestabilidad en el cumplimiento terapéutico.
+        </p>
+    </div>
+
+    <div class="book-card">
+        <h4>3. Consecuencias clínicas</h4>
+        <p class="editors">
+            <strong>Impacto:</strong> Hospitalizaciones y mayor mortalidad
+        </p>
+        <p>
+            La no adherencia incrementa hospitalizaciones y desgaste del sistema de salud.
+        </p>
+        <p>
+            Un estudio clásico (Graham et al.) mostró que el éxito del tratamiento era del 96% cuando el paciente tomaba al menos el 60% de la medicación,
+            pero bajaba al 69% cuando la adherencia era menor.
+        </p>
+    </div>
+
+    <div class="book-card">
+        <h4>4. Consecuencias económicas</h4>
+        <p class="editors">
+            <strong>Costo estimado:</strong> 100 billones USD/año en EE.UU.
+        </p>
+        <p>
+            La interrupción de terapias puede aumentar al menos 20% los costos de salud pública.
+        </p>
+        <p>
+            Genera mayores hospitalizaciones, visitas a urgencias y uso adicional de medicamentos.
+        </p>
+    </div>
+
+    <div class="book-card">
+        <h4>5. Evidencia tecnológica</h4>
+        <p class="editors">
+            <strong>TIC en salud:</strong> Mejora comprobada en adherencia
+        </p>
+        <p>
+            Programas tecnológicos y sistemas inteligentes aumentan la adherencia,
+            reducen hospitalizaciones y disminuyen costos.
+        </p>
+        <p>
+            La integración de TIC en el sector sanitario está transformando las estrategias de cumplimiento terapéutico.
+        </p>
+    </div>
+
+</div>
+
+            <button class="accordion-btn sub-btn">
+    Fuentes no formales
+    <span class="icon">▾</span>
+</button>
+<div class="accordion-content sub-content informal-scroll">
+                <div class="source-card">
+    <h4>Medication Adherence Measurement in Chronic Diseases: A State-of-the-Art Review of the Literature</h4>
+    <p class="authors"><strong>Autores:</strong> Jacqueline Dunbar-Jacob, Jian Zhao</p>
+    <p>
+        Revisión científica que indica que aproximadamente el 50% de los pacientes
+        con enfermedades crónicas no cumple su tratamiento prescrito,
+        generando consecuencias clínicas y de salud pública.
+    </p>
+    <a href="https://www.mdpi.com/2039-4403/15/10/370" target="_blank">Ver fuente</a>
+</div>
+
+<div class="source-card">
+    <h4>Medication adherence influencing factors — an overview of systematic reviews</h4>
+    <p class="authors"><strong>Autores:</strong> Alina Gast & Tim Mathes</p>
+    <p>
+        Revisión de revisiones científicas que identifica múltiples factores
+        que influyen en la adherencia terapéutica, confirmando que el problema
+        es multifactorial y persistente.
+    </p>
+    <a href="https://link.springer.com/article/10.1186/s13643-019-1014-8" target="_blank">Ver fuente</a>
+</div>
+
+<div class="source-card">
+    <h4>Definición de adherencia — Organización Mundial de la Salud (OMS)</h4>
+    <p class="authors"><strong>Fuente:</strong> OMS / WHO EMRO</p>
+    <p>
+        La OMS define la adherencia como el grado en que el comportamiento
+        del paciente corresponde con las recomendaciones acordadas con
+        el profesional de salud. Señala que solo alrededor del 50% de los
+        pacientes crónicos cumple adecuadamente sus tratamientos.
+    </p>
+    <a href="https://www.emro.who.int/emhj-volume-17/issue-4/article15.html" target="_blank">Ver fuente</a>
+</div>
+
+<div class="source-card">
+    <h4>Enhancing Medication Adherence with Chronic Diseases through IoT Technology</h4>
+    <p>
+        Propone un sistema basado en IoT que monitorea en tiempo real,
+        genera recordatorios y mejora la educación del paciente,
+        demostrando el potencial de la tecnología conectada.
+    </p>
+    <a href="https://www.sciencedirect.com/science/article/pii/S1877050924027108" target="_blank">Ver fuente</a>
+</div>
+
+<div class="source-card">
+    <h4>Revolucionando el Sector Salud: Aplicaciones Innovadoras de IoT</h4>
+    <p class="authors"><strong>Fuente:</strong> Ticnus Technology Magazine</p>
+    <p>
+        Explica aplicaciones de IoT en salud, incluyendo gestión de medicamentos
+        y dispensadores inteligentes, mejorando eficiencia y calidad de atención.
+    </p>
+    <a href="https://ticnus.com/guias/revolucionando-el-sector-salud-aplicaciones-innovadoras-de-iot-para-una-atencion-medica-eficiente/" target="_blank">Ver fuente</a>
+</div>
+            </div>
+
+            <button class="accordion-btn sub-btn">
+                Artículos de prensa
+    <span class="icon">▾</span>
+</button>
+
+<div class="accordion-content informal-scroll">
+
+    <div class="source-card">
+        <h4>1. Robots en Farmacias de México (El Universal)</h4>
+        <p><strong>Descripción:</strong> Llegada de la tecnología alemana BD Rowa a farmacias mexicanas para automatizar la dispensación de medicamentos.</p>
+        <p><strong>Tecnología:</strong> Utiliza brazos mecánicos conectados a sistemas de inventario para organizar, surtir medicamentos en segundos y gestionar automáticamente fechas de caducidad.</p>
+        <a href="https://www.eluniversal.com.mx/cartera/llega-robot-dispensador-de-medicina-farmacias/?hl=es-ES" target="_blank">
+            Ver artículo completo
+        </a>
+    </div>
+
+    <div class="source-card">
+        <h4>2. Pastillero Inteligente con Asistente Virtual (La Crónica de Hoy)</h4>
+        <p><strong>Proyecto:</strong> GUIBSA, desarrollado por estudiantes de la Universidad Panamericana y premiado por la Fundación James Dyson México.</p>
+        <p><strong>Tecnología:</strong> Integra diseño industrial con IoT para enviar alertas a familiares mediante app móvil si el paciente no toma su dosis. Incluye alarmas auditivas y visuales.</p>
+        <a href="https://www.cronica.com.mx/academia/disenan-pastillero-inteligente-asistente-virtual-adultos-mayores.html?hl=es-US" target="_blank">
+            Ver artículo completo
+        </a>
+    </div>
+
+    <div class="source-card">
+        <h4>3. Automatización Hospitalaria y Eficiencia (El Economista)</h4>
+        <p><strong>Análisis:</strong> Digitalización y uso de dispensadores automáticos en hospitales mexicanos.</p>
+        <p><strong>Impacto:</strong> Reducción de errores humanos, optimización de gastos y registros de consumo en tiempo real con alertas de suministro.</p>
+        <a href="https://www.eleconomista.com.mx/arteseideas/Dispensador-automatico-de-farmacos-disminuira-errores-y-gastos-en-hospitales-20230727-0153.html?hl=es-ES" target="_blank">
+            Ver artículo completo
+        </a>
+    </div>
+</div>
+</div>
+	<!-- ============================ -->
+	<!-- MERCADO -->
+        <!-- ============================ -->
+        <!-- MERCADO -->
+        <button class="accordion-btn sub-btn">
+            Mercado
+            <span class="icon">▾</span>
+        </button>
+        <div class="accordion-content sub-content">
+            <img src="mercado.png"
+	    alt="Benchmarking"
+	    class="problem-image expandable-img">
+	</div>
+
+
+        <!-- IDENTIFICACIÓN -->
+        <button class="accordion-btn sub-btn">
+    Identificación preliminar del problema
+    <span class="icon">▾</span>
+</button>
+<div class="accordion-content sub-content">
+    <img src="lluvia_ideas.png" 
+    alt="Mapa de problemática"
+    class="problem-image expandable-img">
+</div>
+<!-- Modal -->
+<div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+    </div>
+
+
+    <!-- NECESIDADES -->
+    <button class="accordion-btn">
+    Necesidades y Requerimientos del Usuario
+    <span class="icon">▾</span>
+</button>
+
+<div class="accordion-content">
+
+    <!-- ============================ -->
+    <!-- 1. PERCEPCIÓN INICIAL -->
+    <!-- ============================ -->
+
+    <button class="accordion-btn sub-btn">
+        Percepción inicial de lo que valora el usuario
+        <span class="icon">▾</span>
+    </button>
+
+    <div class="accordion-content sub-content">
+
+        <!-- Opiniones ajenas -->
+        <button class="accordion-btn sub-btn">
+            Opiniones ajenas al equipo
+            <span class="icon">▾</span>
+        </button>
+<div class="accordion-content sub-content">
+            <img src="opinion1.png"
+	    alt="Critica"
+	    class="problem-image expandable-img">
+	</div>
+
+        <!-- Opiniones del equipo -->
+        <button class="accordion-btn sub-btn">
+            Opiniones del equipo
+            <span class="icon">▾</span>
+        </button>
+
+        <div class="accordion-content sub-content">
+            <img src="opinion2.png"
+	    alt="Como mejorar el proyecto"
+	    class="problem-image expandable-img">
+	</div>
+
+    </div>
+
+    <!-- ============================ -->
+    <!-- 2. MAPA DE EMPATÍA -->
+    <!-- ============================ -->
+
+    <button class="accordion-btn sub-btn">
+        Mapa de Empatía
+        <span class="icon">▾</span>
+    </button>
+
+    <div class="accordion-content sub-content">
+            <img src="empatia.png"
+	    alt="Mapa de empatía"
+	    class="problem-image expandable-img">
+	</div>
+
+    <!-- ============================ -->
+    <!-- 3. REQUERIMIENTOS DE USUARIO -->
+    <!-- ============================ -->
+
+    <button class="accordion-btn sub-btn">
+        Requerimientos de Usuario
+        <span class="icon">▾</span>
+    </button>
+<div class="accordion-content informal-scroll">
+
+    <div class="source-card">
+        <h4>1. Requerimientos básicos</h4>
+        <p>El dispositivo debe entregar la pastilla correcta en el momento correcto.</p>
+        <p>El usuario debe entender claramente cuándo tomar su medicamento.</p>
+	<p>El usuario debe sentirse seguro usando el dispositivo.</p>
+	<p>El usuario debe poder confiar en que el dispositivo no fallará sin avisar.</p>
+	<p>El dispositivo debe proteger sus medicamentos y su información personal.</p>
+	<p>El mecanismo debe ser compatible con diversos tamaños de pastillas</p>
+	<p>El dispositivo tiene confirmación de retiro (o no retiro)</p>
+    </div>
+<div class="source-card">
+        <h4>2. Requerimientos lineales</h4>
+        <p>Mientras más fácil y rápido sea tomar el medicamento, mejor.</p>
+        <p>Mientras más claros sean los avisos (visual/sonoro), más cómodo me siento.</p>
+	<p>Mientras menos tenga que recordar horarios, más valoro el producto.</p>
+	<p>El dispositivo debe notificar al usuario el nivel bajo de inventario para anticipar la compra de medicamento.</p>
+	<p>Mientras menos intervención de terceros requiera, mejor experiencia tengo.</p>
+    </div>
+<div class="source-card">
+        <h4>3. Requerimientos atractivos</h4>
+        <p>El diseño exterior debe ser discreto.</p>
+        <p>El sistema avisa a mi doctor sin que yo tenga que explicar todo.</p>
+	<p>El sistema me permite ver mi progreso de forma sencilla.</p>
+	<p>El dispensador debe contar con iluminación nocturna tenue.</p>
+    </div>
+  </div>
+    
+
+    <!-- ============================ -->
+    <!-- 4. CARACTERÍSTICAS DE INGENIERÍA -->
+    <!-- ============================ -->
+
+    <button class="accordion-btn sub-btn">
+        Características de Ingeniería
+        <span class="icon">▾</span>
+    </button>
+
+    <div class="accordion-content sub-content informal-scroll">
+        <ul>
+            <li>Precisión temporal de dispensado (Error ± segundos/minutos)</li>
+         <li>Precisión de selección de compartimento (% de dispensados correctos por ciclo)</li>
+	<li>Capacidad de identificación del medicamento (Número de compartimentos independientes / medicamentos soportados)</li>
+	<li>Tiempo de respuesta del sistema ante evento programado (ms)</li>
+	<li>Confirmación de retiro de medicamento (Detección binaria (retirado / no retirado))</li>
+	<li>Tiempo máximo de detección de no-retiro (segundos)</li>
+	<li>Compatibilidad con tamaños de pastillas (mm)</li>
+	<li>Capacidad máxima de almacenamiento (Número de pastillas por compartimento / total)</li>
+	<li>Nivel de ruido durante operación (dB) </li>
+	<li>Intensidad luminosa de notificaciones (Lúmenes)</li>
+	<li>Frecuencia y volumen de alertas sonoras (dB y Hz)</li>
+	<li>Tiempo de aprendizaje del usuario (min)</li>
+	<li>Número de pasos para tomar el medicamento (Cantidad de acciones del usuario)</li>
+	<li>Autonomía energética del dispositivo (horas/días)</li>
+	<li>Tiempo de respaldo ante falla eléctrica (horas)</li>
+	<li>Detección y reporte de fallas (segundos)</li>
+	<li>Tasa de fallos mecánicos (Fallos por número de ciclos)</li>
+	<li>Integridad de datos de cumplimiento (% de registros almacenados correctamente)</li>
+	<li>Latencia de sincronización con plataforma externa (segundos/minutos)</li>
+	<li>Nivel de seguridad de acceso al dispositivo (PIN, RFID, etc.)</li>
+	<li>Protección de datos personales (Nivel de cifrado / protocolo de seguridad utilizado)</li>
+	<li>Umbral de alerta por bajo inventario (% restante de medicamento que dispara alerta)</li>
+	<li>Iluminación nocturna del dispensador (Lúmenes)</li>
+	<li>Dimensiones físicas del dispositivo (mm)</li>
+	<li>Peso total del dispositivo (g)</li>
+	<li>Tiempo de configuración inicial (min)</li>
+	<li>Consumo energético promedio (mA o Wh por día)</li>
+	<li>Resistencia a manipulación externa (N)</li>
+        </ul>
+    </div>
+
+    <!-- ============================ -->
+    <!-- 5. FORMATO HOQ -->
+    <!-- ============================ -->
+
+    <button class="accordion-btn sub-btn">
+        Formato HOQ (House of Quality)
+        <span class="icon">▾</span>
+    </button>
+
+    <div class="accordion-content sub-content informal-scroll">
+    <p>En esta sección se presenta la matriz HOQ (House of Quality) que relaciona
+    los requerimientos del usuario con las características de ingeniería.</p>
+
+    <a href="hoq.xlsx" download class="download-btn">
+        📊 Descargar Matriz HOQ (.xlsx)
+    </a>
+</div>
+
+</div>
+
+
+    <!-- ARQUITECTURA -->
+    <button class="accordion-btn">
+        Arquitectura funcional
+        <span class="icon">▾</span>
+    </button>
+
+<div class="accordion-content sub-content">
+            <img src="arq.png"
+	    alt="Arquitectura"
+	    class="problem-image expandable-img">
+	</div>
+
+
+
+    <!-- PDS -->
+    <button class="accordion-btn">
+        PDS
+        <span class="icon">▾</span>
+    </button>
+    <div class="accordion-content">
+        <a href="pds.pdf" download class="download-btn">
+        📊 Descargar PDS (.pdf)
+    </a>
+    </div>
+
+</div>
+
+
+
+</section>
+
+<footer>
+    Proyecto Integración a Mecatrónica
+</footer>
+
+
+<script>
+document.querySelectorAll(".accordion-btn").forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        const content = this.nextElementSibling;
+        const isOpen = content.classList.contains("active");
+
+        const parent = this.parentElement;
+
+        // cerrar hermanos
+        parent.querySelectorAll(":scope > .accordion-content").forEach(c => {
+            if (c !== content) {
+                c.classList.remove("active");
+                c.style.maxHeight = null;
+            }
+        });
+
+        parent.querySelectorAll(":scope > .accordion-btn").forEach(b => {
+            if (b !== this) b.classList.remove("open");
+        });
+
+        if (!isOpen) {
+            content.classList.add("active");
+            content.style.maxHeight = content.scrollHeight + "px";
+            this.classList.add("open");
+        } else {
+            content.classList.remove("active");
+            content.style.maxHeight = null;
+            this.classList.remove("open");
+        }
+
+        // reajustar padres
+        let parentAccordion = parent.closest(".accordion-content");
+        while (parentAccordion) {
+            parentAccordion.style.maxHeight = parentAccordion.scrollHeight + "px";
+            parentAccordion = parentAccordion.parentElement.closest(".accordion-content");
+        }
+
+    });
+
+});
+   // MODAL PARA TODAS LAS IMÁGENES
+const images = document.querySelectorAll(".expandable-img");
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close-modal");
+
+images.forEach(img => {
+    img.addEventListener("click", function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    });
+});
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+modal.onclick = function(e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+</body>
+</html>
