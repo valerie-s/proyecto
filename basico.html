@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño Básico - MediSync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1> Dispensador de Medicinas</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="diseno.html">Diseño Preliminar</a>
+        <a href="basico.html" class="active">Diseño Básico</a>
+    </nav>
+</header>
+
+<section class="card">
+    <h2>Diseño Básico</h2>
+    <div class="accordion">
+
+        <button class="accordion-btn">
+            Matriz Morfológica
+            <span class="icon">▾</span>
+        </button>
+        <div class="accordion-content">
+            <p><strong>Desglose Funcional:</strong> En esta sección analizamos cómo fluyen los materiales (medicamentos), la energía y las señales de información para cada acción clave del dispensador MediSync. A continuación, se presenta la matriz detallada en tarjetas funcionales:</p>
+
+            <div class="informal-scroll" style="margin-top: 20px;">
+
+                <div class="source-card morf-card">
+                    <h3 class="morf-category-title">1. Gestión y dispensación</h3>
+                    
+                    <div class="morf-grid-header">
+                        <div>Acción</div>
+                        <div>Masa (In/Out)</div>
+                        <div>Energía (In)</div>
+                        <div>Información (In/Out)</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>1 Dispensar medicamentos</strong></div>
+                        <div class="morf-masa">(In) medicamentos<br>(Out) medicamento dispensado</div>
+                        <div class="morf-energia">batería/energía</div>
+                        <div class="morf-info">(In) orden de dispensación<br>(Out) señal</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>1.3 Separar dosis</strong></div>
+                        <div class="morf-masa">(In) medicamentos<br>(Out) dosis separada</div>
+                        <div class="morf-energia">batería/energía</div>
+                        <div class="morf-info">(In) tamaño de dosis<br>(Out) señal</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>1.1 Almacenar medicamentos</strong></div>
+                        <div class="morf-masa">(In) medicamentos<br>(Out) medicamentos almacenados</div>
+                        <div class="morf-energia"><em>N/A</em></div>
+                        <div class="morf-info"><em>N/A</em></div>
+                    </div>
+                </div> <div class="source-card morf-card" style="border-left-color: #1abc9c;">
+                    <h3 class="morf-category-title">2. Control de inventario</h3>
+                    
+                    <div class="morf-grid-header">
+                        <div>Acción</div>
+                        <div>Masa (In/Out)</div>
+                        <div>Energía (In)</div>
+                        <div>Información (In/Out)</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>2 Inventariar medicamentos</strong></div>
+                        <div class="morf-masa">(In) medicamentos</div>
+                        <div class="morf-energia">batería</div>
+                        <div class="morf-info">(Out) conteo de inventario</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>2.1 Avisar bajo inventario</strong></div>
+                        <div class="morf-masa"><em>N/A</em></div>
+                        <div class="morf-energia">batería/red</div>
+                        <div class="morf-info">(In) nivel de inventario<br>(Out) alerta</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>2.2 Evitar medicamentos caducos</strong></div>
+                        <div class="morf-masa">(In) medicamentos</div>
+                        <div class="morf-energia">batería</div>
+                        <div class="morf-info">(In) fecha de caducidad</div>
+                    </div>
+                </div> <div class="source-card morf-card" style="border-left-color: #f1c40f;">
+                    <h3 class="morf-category-title">3. Seguridad y cumplimiento</h3>
+                    
+                    <div class="morf-grid-header">
+                        <div>Acción</div>
+                        <div>Masa (In/Out)</div>
+                        <div>Energía (In)</div>
+                        <div>Información (In/Out)</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>3 Recordar tomar medicamentos</strong></div>
+                        <div class="morf-masa"><em>N/A</em></div>
+                        <div class="morf-energia">batería</div>
+                        <div class="morf-info">(Out) recordatorio</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>3.1 Validar retiro de medicamento</strong></div>
+                        <div class="morf-masa">(In) medicamento</div>
+                        <div class="morf-energia">batería</div>
+                        <div class="morf-info">(Out) confirmación</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>3.2 Actividad del paciente</strong></div>
+                        <div class="morf-masa"><em>N/A</em></div>
+                        <div class="morf-energia">batería</div>
+                        <div class="morf-info">(Out) estado del paciente</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>3.3 Llevar bitácora de ingesta</strong></div>
+                        <div class="morf-masa"><em>N/A</em></div>
+                        <div class="morf-energia">batería</div>
+                        <div class="morf-info">(In) evento de toma<br>(Out) registro</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>3.4 Historial de cumplimiento</strong></div>
+                        <div class="morf-masa"><em>N/A</em></div>
+                        <div class="morf-energia">batería</div>
+                        <div class="morf-info">(In) registros<br>(Out) historial</div>
+                    </div>
+                </div> <div class="source-card morf-card" style="border-left-color: #ef4444;">
+                    <h3 class="morf-category-title">4. Info y comunicación médica</h3>
+                    
+                    <div class="morf-grid-header">
+                        <div>Acción</div>
+                        <div>Masa (In/Out)</div>
+                        <div>Energía (In)</div>
+                        <div>Información (In/Out)</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>4 Progreso del paciente</strong></div>
+                        <div class="morf-masa"><em>N/A</em></div>
+                        <div class="morf-energia">batería</div>
+                        <div class="morf-info">(In) historial<br>(Out) progreso</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>4.1 Mal uso de medicamentos</strong></div>
+                        <div class="morf-masa"><em>N/A</em></div>
+                        <div class="morf-energia">batería</div>
+                        <div class="morf-info">(In) registros<br>(Out) alerta</div>
+                    </div>
+
+                    <div class="morf-grid-row">
+                        <div class="morf-accion"><strong>4.2 Aumento de información de dosis</strong></div>
+                        <div class="morf-masa"><em>N/A</em></div>
+                        <div class="morf-energia">batería</div>
+                        <div class="morf-info">(In) medicamento/dosis</div>
+                    </div>
+                </div> </div> </div>
+
+        <button class="accordion-btn">
+            Estructura Funcional
+            <span class="icon">▾</span>
+        </button>
+        <div class="accordion-content">
+           
+        </div>
+
+        <button class="accordion-btn">
+            Matriz de Pugh
+            <span class="icon">▾</span>
+        </button>
+        <div class="accordion-content">
+            <p><strong>Selección del concepto:</strong> ¿Cómo elegimos el mejor diseño? Utilizando la Matriz de Pugh comparamos nuestras diferentes propuestas contra un diseño de referencia. Evaluamos cada opción basándonos en los requerimientos del usuario y criterios de ingeniería para elegir objetivamente el concepto ganador.</p>
+
+            <h3 style="margin-top: 30px; color: #0f172a;">Análisis de Conceptos</h3>
+            
+            <div class="informal-scroll">
+                
+                <div class="source-card" style="border-left-color: #10b981;">
+                    <h4 style="color: #10b981;">Solución Verde</h4>
+                    <p><strong>1. Dispensar medicamentos:</strong> El sistema rotatorio/botón permite ejecutar la entrega y, con apoyo del modo Manual, se asegura el control cuando se requiera intervención; los compartimentos se usan para almacenar medicamentos y también para separar dosis de forma ordenada.</p>
+                    <p><strong>2. Inventariar medicamentos:</strong> La base de datos registra existencias y movimientos para soportar avisar bajo inventario mediante mensaje, y activar alarma como medida inmediata para evitar medicamentos caducos.</p>
+                    <p><strong>3. Recordar tomar medicamentos:</strong> La cámara apoya la validación y seguimiento de la actividad del paciente, y con cada evento se genera un reporte que alimenta la bitácora e historial.</p>
+                    <p><strong>4. Progreso del paciente:</strong> La encuesta captura percepción y hábitos para detectar mal uso de medicamentos, se envía mensaje al médico cuando haya señales relevantes, y la pantalla muestra el aumento de información de dosis de forma clara para el paciente.</p>
+                </div>
+
+                <div class="source-card" style="border-left-color: #ef4444;">
+                    <h4 style="color: #ef4444;">Solución Roja</h4>
+                    <p><strong>1. Dispensar medicamentos:</strong> El modo Manual por emergencia permite activar el suministro cuando el sistema automático falla; el control de Tiempo dosis asegura que la entrega sea correcta y los Compartimentos organizan el almacenamiento y separación. En caso necesario, el modo manual permite intervenir directamente para garantizar continuidad del servicio.</p>
+                    <p><strong>2. Inventariar medicamentos:</strong> El led funciona como indicador visual del estado del inventario y los avisos notifican niveles bajos o próximos vencimientos; un segundo led puede reforzar alertas críticas para evitar errores operativos.</p>
+                    <p><strong>3. Recordar tomar medicamentos:</strong> El botón confirma la acción del paciente, se genera un mensaje de confirmación y se crea un reporte automático; además, otro reporte consolida el historial de cumplimiento para seguimiento clínico.</p>
+                    <p><strong>4. Progreso del paciente:</strong> El sistema puede emitir una receta médica basada en los datos recopilados, cerrando el ciclo entre monitoreo, registro y acción médica.</p>
+                </div>
+
+                <div class="source-card" style="border-left-color: #3b82f6;">
+                    <h4 style="color: #3b82f6;">Solución Azul</h4>
+                    <p><strong>1. Dispensar medicamentos:</strong> El modelo híbrido combina supervisión humana con operación automática, permitiendo que el sistema funcione solo pero con posibilidad de intervención cuando sea necesario.</p>
+                    <p><strong>2. Inventariar medicamentos:</strong> La información se gestiona en excel/programa, donde se registran existencias, movimientos y patrones de consumo para mantener control estructurado.</p>
+                    <p><strong>3. Recordar tomar medicamentos:</strong> Un sensor detecta interacción o presencia; si no se cumple la toma en el tiempo esperado, se activa una alarma y se envía un mensaje como recordatorio inmediato.</p>
+                    <p><strong>4. Progreso del paciente:</strong> El sistema genera una alerta cuando detecta comportamientos irregulares o riesgo clínico, permitiendo escalar la situación de manera oportuna.</p>
+                </div>
+
+                <div class="source-card" style="border-left-color: #64748b;">
+                    <h4>Documento Detallado de Evaluación</h4>
+                    <p style="margin-bottom: 15px;">Consulta la matriz completa con las ponderaciones y calificaciones de cada concepto de diseño.</p>
+                    <a href="pugh.pdf" class="download-btn"> 
+		    📄 Abrir Matriz de Pugh (PDF)</a>
+                </div>
+
+            </div>
+        </div>
+        <button class="accordion-btn">
+            Diseño del Producto
+            <span class="icon">▾</span>
+        </button>
+        <div class="accordion-content">
+            <p>Haz clic sobre la imagen para verla en pantalla completa.</p>
+            <img src="diseno_producto.png" 
+                 alt="Diseño del Producto" 
+                 class="problem-image expandable-img">
+        </div>
+
+    </div>
+
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+</section>
+
+<footer>
+    Proyecto Integración a Mecatrónica
+</footer>
+
+<script>
+// SCROLL Y APERTURA DEL ACORDEÓN
+document.querySelectorAll(".accordion-btn").forEach(button => {
+    button.addEventListener("click", function () {
+        const content = this.nextElementSibling;
+        const isOpen = content.classList.contains("active");
+        const parent = this.parentElement;
+
+        // Cerrar hermanos
+        parent.querySelectorAll(":scope > .accordion-content").forEach(c => {
+            if (c !== content) {
+                c.classList.remove("active");
+                c.style.maxHeight = null;
+            }
+        });
+
+        parent.querySelectorAll(":scope > .accordion-btn").forEach(b => {
+            if (b !== this) b.classList.remove("open");
+        });
+
+        if (!isOpen) {
+            content.classList.add("active");
+            // Le damos un valor dinámico grande para que no corte la imagen
+            content.style.maxHeight = content.scrollHeight + 800 + "px"; 
+            this.classList.add("open");
+        } else {
+            content.classList.remove("active");
+            content.style.maxHeight = null;
+            this.classList.remove("open");
+        }
+    });
+});
+
+// MODAL PARA TODAS LAS IMÁGENES
+const images = document.querySelectorAll(".expandable-img");
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close-modal");
+
+images.forEach(img => {
+    img.addEventListener("click", function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    });
+});
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+modal.onclick = function(e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

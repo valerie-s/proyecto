@@ -435,3 +435,69 @@ footer {
     margin-top: 20px;
     color: #000;
 }
+
+/* ========================= */
+/* ESTILOS NUEVOS MATRIZ     */
+/* ========================= */
+
+.morf-card {
+    padding: 25px !important;
+    margin-bottom: 25px;
+}
+
+.morf-category-title {
+    color: #0f172a;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+/* Definición de la Cuadrícula (Grid) */
+.morf-grid-header, .morf-grid-row {
+    display: grid;
+    /* Ajusta los anchos de las columnas: Acción más ancha, energía más estrecha */
+    grid-template-columns: 2fr 1.5fr 1fr 1.5fr;
+    gap: 15px;
+    align-items: start;
+    padding: 12px 10px;
+}
+
+/* Estilos de Encabezado */
+.morf-grid-header {
+    background-color: #f8fafc;
+    font-weight: bold;
+    color: #1e293b;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+/* Estilos de Fila de Datos */
+.morf-grid-row {
+    border-bottom: 1fr solid #f1f5f9;
+    transition: background-color 0.2s;
+}
+
+.morf-grid-row:hover {
+    background-color: #f8fafc; /* Efecto hover sutil */
+}
+
+/* Estilos de contenido de celda */
+.morf-grid-row div {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #475569;
+}
+
+.morf-accion strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.morf-grid-row em {
+    color: #94a3b8; /* Estilo para N/A */
+    font-style: italic;
+}
